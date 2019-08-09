@@ -14,6 +14,7 @@ body{
 /** globales**/
 .contenedor{
     max-width: 1200px;
+    width: 95%;
     margin: 0 auto;
 }
 h1,h2,h3,h4 {
@@ -24,6 +25,7 @@ h1{
 }
 h2{
     font-size: 4rem;
+    line-height: 1.2;
 }
 h3{
     font-size: 3.2rem;
@@ -40,6 +42,31 @@ img{
 }
 .no-margin{
     margin: 0;
+}
+
+/** botones **/
+.btn{
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    padding: 1rem 3rem;
+    margin: 2rem 0;
+}
+@media (min-width:770px){
+    .btn{
+        display: inline-block;
+    }
+}
+.btn-primario{
+    background-color: #000000;
+}
+.btn-secundario{
+    background-color: #784d3c;
 }
 
 /**header**/
@@ -74,6 +101,8 @@ img{
     text-align: center;
     display: block;
     font-size: 1.8rem;
+    color: #ffffff;
+    text-decoration: none;
 }
 @media (min-width:770px){
     .navegacion a{
@@ -98,4 +127,76 @@ img{
 }
 .texto-header p{
     font-size: 2.2rem;
+}
+/**contenido principal**/
+
+.contenido-principal{
+    display: flex;
+    flex-wrap: wrap;
+}
+.blog, 
+.cursos{
+    flex: 0 0 100%;
+}
+.cursos{
+    order: -1;
+}
+@media (min-width:770px){
+    .contenido-principal{
+        justify-content: space-between;
+    }
+    .blog{
+        flex-basis: 66.6%;
+    }
+    .cursos{
+        flex-basis: calc(33.3% - 4rem);
+        order: 1;
+    }
+}
+
+.entrada-blog{
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #e1e1e1;
+}
+.entrada-blog:last-of-type{
+    border: none;
+}
+/** cursos **/
+.curso-lista{
+    padding: 0;
+    list-style: none;
+}
+.curso{
+    padding-bottom: 3rem;
+    border-bottom: 1px solid #e1e1e1;
+}
+.curso:last-of-type{
+    border: none;
+}
+.curso p{
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+}
+.curso span{
+    font-weight: 400;
+}
+
+/** footer **/
+
+.site-footer{
+    background-color: #000000;
+    padding: 2.5rem;
+    margin-top: 4rem;
+}
+.site-footer p{
+    color: #ffffff;
+    font-size: 4rem;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    text-align: center;
+
+}
+.site-footer p span{
+    font-weight: 700;
 }
