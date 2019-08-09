@@ -44,6 +44,20 @@ img{
     margin: 0;
 }
 
+/** Grid **/
+@media (min-width:770px){
+    .grid{
+        display: flex;
+        justify-content: space-between;
+    }
+    .columnas-6{
+        flex: 0 0 calc(50% - 1rem);
+    }
+    .columnas-6 p{
+        text-align: justify;
+    }
+}
+
 /** botones **/
 .btn{
     display: block;
@@ -161,6 +175,11 @@ img{
 .entrada-blog:last-of-type{
     border: none;
 }
+
+.contenido-blog p{
+    text-align: justify;
+}
+
 /** cursos **/
 .curso-lista{
     padding: 0;
@@ -200,3 +219,5 @@ img{
 .site-footer p span{
     font-weight: 700;
 }
+
+
