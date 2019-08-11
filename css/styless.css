@@ -44,17 +44,25 @@ img{
     margin: 0;
 }
 
+/** alineal texto **/
+.justificar {
+    text-align: justify;
+}
+
 /** Grid **/
 @media (min-width:770px){
     .grid{
         display: flex;
         justify-content: space-between;
     }
+    .columnas-4{
+        flex: 0 0 calc(33.3% - 1rem);
+    }
     .columnas-6{
         flex: 0 0 calc(50% - 1rem);
     }
-    .columnas-6 p{
-        text-align: justify;
+    .columnas-8{
+        flex: 0 0 calc(66.6% - 1rem);
     }
 }
 
