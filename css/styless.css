@@ -89,6 +89,7 @@ img{
     padding: 1rem 3rem;
     margin: 2rem 0;
     flex: 0 0 100%;
+    border: none;
 }
 .btn:hover{
     cursor: pointer;
